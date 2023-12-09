@@ -690,7 +690,7 @@ Frieren:
 Eisen:
  route add -net 192.198.0.0 netmask 255.255.252.0 gw 192.198.32.1
  route add -net 192.198.4.0 netmask 255.255.255.192 gw 192.198.32.1
- route add -net 192.198.8.0 netmask 255.255.255.252 gw 192.98.32.1
+ route add -net 192.198.8.0 netmask 255.255.255.252 gw 192.198.32.1
  route add -net 192.198.16.0 netmask 255.255.254.0 gw 192.198.32.1
 
  route add -net 192.198.128.0 netmask 255.255.252.0 gw 192.198.136.10
@@ -698,13 +698,13 @@ Eisen:
 
 Aura:
 # Frieren
- route add -net 192.197.0.0 netmask 255.255.248.0 gw 192.198.128.1
- route add -net 192.197.8.0 netmask 255.255.0.248 gw 192.198.128.1
- route add -net 192.197.32.0 netmask 255.255.252.0 gw 192.198.128.1
- route add -net 192.197.36.8 netmask 255.255.255.252 gw 192.198.128.1
- route add -net 192.197.36.0 netmask 255.255.255.248 gw 192.198.128.1
- route add -net 192.197.16.0 netmask 255.255.255.252 gw 192.198.128.1
- route add -net 192.197.64.0 netmask 255.255.255.224 gw 192.198.128.1
+ route add -net 192.197.0.0 netmask 255.255.248.0 gw 192.197.128.1
+ route add -net 192.197.8.0 netmask 255.255.0.248 gw 192.197.128.1
+ route add -net 192.197.32.0 netmask 255.255.252.0 gw 192.197.128.1
+ route add -net 192.197.36.8 netmask 255.255.255.252 gw 192.197.128.1
+ route add -net 192.197.36.0 netmask 255.255.255.248 gw 192.197.128.1
+ route add -net 192.197.16.0 netmask 255.255.255.252 gw 192.197.128.1
+ route add -net 192.197.64.0 netmask 255.255.255.224 gw 192.197.128.1
 
 
 # Denken
