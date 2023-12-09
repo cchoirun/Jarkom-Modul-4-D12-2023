@@ -273,6 +273,7 @@ d9-abe1de941747)
 ### d). Konfigurasi Network:
 ```
 RAura:
+RAura:
 auto lo
 iface lo inet loopback
 
@@ -311,25 +312,25 @@ gateway 192.199.1.1
 #A21
 auto eth1
 iface eth1 inet static
-address 192.199.0.0
+address 192.199.0.1
 netmask 255.255.255.0
 
 rRoyalcapital:
 #A21
 auto eth0
 iface eth0 inet static
-address 192.199.0.3
+address 192.199.0.5
 netmask 255.255.255.0
-gateway 192.199.8.1
+gateway 192.199.0.1
 
 
 rWillieRegion:
 #A21
 auto eth0
 iface eth0 inet static
-address 192.199.0.5
+address 192.199.0.10
 netmask 255.255.255.0
-gateway 192.199.8.1
+gateway 192.199.0.1
 
 rFrieren:
 auto lo
@@ -646,6 +647,7 @@ iface eth0 inet static
 address 192.198.0.5
 netmask 255.255.252.0
 gateway 192.198.0.1
+
 ```
 
 ### e).Routing:
@@ -653,73 +655,72 @@ gateway 192.198.0.1
 ROUTING:
 
 Denken:
- route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.199.1.1
+up route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.199.0.1
 
 Lugner:
- route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.198.136.10
+up route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.198.128.1
+up route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.198.132.1
 
 Linie:
- route add -net 192.198.4.0 netmask 255.255.255.192 gw 192.198.8.3
- route add -net 192.198.0.0 netmask 255.255.252.0 gw 192.198.8.3
+up route add -net 192.198.4.0 netmask 255.255.255.192 gw 192.198.8.1
+up route add -net 192.198.0.0 netmask 255.255.252.0 gw 192.198.8.1
 
 Lawine:
- route add -net 192.198.0.0 netmask 255.255.252.0 gw 192.198.4.5
+up route add -net 192.198.0.0 netmask 255.255.252.0 gw 192.198.4.1
 
 Heiter:
- route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.198.8.3
+up route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.198.0.1
 
 Himmel:
- route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.197.16.3
+up route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.197.36.1
 
 Flamme:
- route add -net 192.197.0.0 netmask 255.255.248.0 gw 192.197.8.3
- route add -net 192.197.36.8 netmask 255.255.255.248 gw 192.197.36.11
+up route add -net 192.197.0.0 netmask 255.255.248.0 gw 192.197.8.1
+up route add -net 192.197.36.0 netmask 255.255.255.248 gw 192.197.36.9
 
 Fern:
- route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.197.16.3
+up route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.197.0.1
 
 Frieren:
- route add -net 192.197.0.0 netmask 255.255.248.0 gw 
-192.197.8.3 
- route add -net 192.197.8.0 netmask 255.255.248.0 gw 192.197.16.3
- route add -net 192.197.32.0 netmask 255.255.252.0 gw 192.197.16.3
- route add -net 192.197.36.8 netmask 255.255.252.0 gw 192.197.16.3
- route add -net 192.197.36.0 netmask 255.255.255.248 gw 192.197.36.11
+up route add -net 192.197.0.0 netmask 255.255.248.0 gw 192.197.16.1 
+up route add -net 192.197.8.0 netmask 255.255.248.0 gw 192.197.16.1 
+up route add -net 192.197.32.0 netmask 255.255.252.0 gw 192.197.16.1 
+up route add -net 192.197.36.8 netmask 255.255.252.0 gw 192.197.16.1 
+up route add -net 192.197.36.0 netmask 255.255.255.248 gw 192.197.16.1 
 
 Eisen:
- route add -net 192.198.0.0 netmask 255.255.252.0 gw 192.198.4.3
- route add -net 192.198.4.0 netmask 255.255.255.192 gw 192.198.8.3
- route add -net 192.198.8.0 netmask 255.255.255.252 gw 192.98.32.3
- route add -net 192.198.16.0 netmask 255.255.254.0 gw 192.198.32.3
+up route add -net 192.198.0.0 netmask 255.255.252.0 gw 192.198.32.1
+up route add -net 192.198.4.0 netmask 255.255.255.192 gw 192.198.32.1
+up route add -net 192.198.8.0 netmask 255.255.255.252 gw 192.98.32.1
+up route add -net 192.198.16.0 netmask 255.255.254.0 gw 192.198.32.1
 
- route add -net 192.198.128.0 netmask 255.255.252.0 gw 192.198.136.12
- route add -net 192.198.132.0 netmask 255.255.255.0 gw 192.198.136.12
+up route add -net 192.198.128.0 netmask 255.255.252.0 gw 192.198.136.10
+up route add -net 192.198.132.0 netmask 255.255.255.0 gw 192.198.136.10
 
 Aura:
 # Frieren
- route add -net 192.197.0.0 netmask 255.255.248.0 gw 192.197.8.3
- route add -net 192.197.8.0 netmask 255.255.0.248 gw 192.197.16.3
- route add -net 192.197.32.0 netmask 255.255.252.0 gw 192.197.16.3
- route add -net 192.197.36.8 netmask 255.255.255.252 gw 192.197.16.3
- route add -net 192.197.36.0 netmask 255.255.255.248 gw 192.197.36.11
- route add -net 192.197.16.0 netmask 255.255.255.252 gw 192.197.128.3
- route add -net 192.197.64.0 netmask 255.255.255.224 gw 192.197.128.3
+up route add -net 192.197.0.0 netmask 255.255.248.0 gw 192.198.128.1
+up route add -net 192.197.8.0 netmask 255.255.0.248 gw 192.198.128.1
+up route add -net 192.197.32.0 netmask 255.255.252.0 gw 192.198.128.1
+up route add -net 192.197.36.8 netmask 255.255.255.252 gw 192.198.128.1
+up route add -net 192.197.36.0 netmask 255.255.255.248 gw 192.198.128.1
+up route add -net 192.197.16.0 netmask 255.255.255.252 gw 192.198.128.1
+up route add -net 192.197.64.0 netmask 255.255.255.224 gw 192.198.128.1
 
 
 # Denken
- route add -net 192.199.0.0 netmask 255.255.255.0 gw 192.199.1.3
+up route add -net 192.199.0.0 netmask 255.255.255.0 gw 192.199.1.1
 
 # Eisen
- route add -net 192.198.0.0 netmask 255.255.252.0 gw 192.198.4.3
- route add -net 192.198.4.0 netmask 255.255.255.192 gw 192.198.8.3
- route add -net 192.198.8.0 netmask 255.255.252.252 gw 192.98.32.3
- route add -net 192.198.16.0 netmask 255.255.254.0 gw 192.198.32.3
- route add -net 192.198.32.0 netmask 255.255.255.252 gw 192.198.144.3
+up route add -net 192.198.0.0 netmask 255.255.252.0 gw 192.198.32.1
+up route add -net 192.198.4.0 netmask 255.255.255.192 gw 192.198.32.1
+up route add -net 192.198.8.0 netmask 255.255.252.252 gw 192.198.32.1
+up route add -net 192.198.16.0 netmask 255.255.254.0 gw 192.198.32.1
+up route add -net 192.198.32.0 netmask 255.255.255.252 gw 192.198.32.1
+up route add -net 192.198.128.0 netmask 255.255.252.0 gw 192.198.32.1
+up route add -net 192.198.132.0 netmask 255.255.255.0 gw 192.198.32.1
+up route add -net 192.198.136.9 netmask 255.255.255.252 gw 192.198.32.1
+up route add -net 192.198.144.4 netmask 255.255.255.252 gw 192.198.32.1
+up route add -net 192.198.64.0 netmask 255.255.255.252 gw 192.198.32.1
 
- route add -net 192.198.128.0 netmask 255.255.252.0 gw 192.198.136.12
- route add -net 192.198.132.0 netmask 255.255.255.0 gw 192.198.136.12
- route add -net 192.198.136.9 netmask 255.255.255.252 gw 192.198.144.3
- route add -net 192.198.144.4 netmask 255.255.255.252 gw 192.198.144.3
-
- route add -net 192.198.64.0 netmask 255.255.255.252 gw 192.198.144.3
 ```
