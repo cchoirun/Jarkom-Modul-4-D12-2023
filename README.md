@@ -696,7 +696,6 @@ Eisen:
  route add -net 192.198.132.0 netmask 255.255.255.0 gw 192.198.136.12
 
 Aura:
-```
  route add -net 192.197.0.0 netmask 255.255.248.0 gw 192.197.128.2
  route add -net 192.197.8.0 netmask 255.255.248.0 gw 192.197.128.2
  route add -net 192.197.32.0 netmask 255.255.252.0 gw 192.197.128.2
